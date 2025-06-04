@@ -1,0 +1,9 @@
+services:
+  plex-watcher:
+    build: .
+    container_name: plex-watcher
+    volumes:
+      - "${MEDIA_DIR}:/data:ro"
+    env_file:
+      - .env
+    restart: unless-stopped
