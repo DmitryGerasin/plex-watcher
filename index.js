@@ -71,4 +71,4 @@ watcher
    .on('addDir', resetDebounce)
    .on('unlinkDir', resetDebounce);
 
-   console.log(`${timeStamp()} 📺  Watching ${WATCH_PATH} for Plex changes with a debounce delay of ${DEBOUNCE_DELAY/1000}s...`);
+console.log(`${timeStamp()} 📺  Watching ${WATCH_PATH} for Plex changes with a debounce delay of ${DEBOUNCE_DELAY/1000}s...`);
